@@ -25,6 +25,10 @@ public class Usuario {
 	@OneToOne(mappedBy="usuario")
 	private Vacinacao vacinacao;
 	
+	public Usuario() {
+		
+	}
+	
 	public Usuario(UsuarioDTO usuarioCadastro) {
 		this.id = usuarioCadastro.getId();
 		this.nome = usuarioCadastro.getNome();
