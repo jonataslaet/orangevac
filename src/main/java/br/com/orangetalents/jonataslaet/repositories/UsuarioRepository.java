@@ -8,4 +8,7 @@ import br.com.orangetalents.jonataslaet.models.Usuario;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 
+	Long countByEmail(String email);
+	Usuario findByEmail(String emailDoUsuario);
+
 }

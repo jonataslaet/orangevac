@@ -28,4 +28,24 @@ public class UsuarioDTO {
 	@JsonFormat(pattern = "dd/MM/yyyy")
 	@NotNull
 	private LocalDate dataNascimento;
+
+	public Long getId() {
+		return id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public LocalDate getDataNascimento() {
+		return dataNascimento;
+	}
 }

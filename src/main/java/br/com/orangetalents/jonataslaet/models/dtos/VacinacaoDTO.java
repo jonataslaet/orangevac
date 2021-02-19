@@ -20,4 +20,20 @@ public class VacinacaoDTO {
 	@JsonFormat(pattern = "dd/MM/yyyy")
 	@NotNull
 	private LocalDate dataRealizacao;
+
+	public Long getId() {
+		return id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public String getEmailDoUsuario() {
+		return emailDoUsuario;
+	}
+
+	public LocalDate getDataRealizacao() {
+		return dataRealizacao;
+	}
 }
