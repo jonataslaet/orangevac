@@ -19,5 +19,25 @@ public class ErroPadrao implements Serializable {
 		this.messagem = messagem;
 		this.caminho = caminho;
 	}
+
+	public Long getInstante() {
+		return instante;
+	}
+
+	public Integer getStatus() {
+		return status;
+	}
+
+	public String getMotivo() {
+		return motivo;
+	}
+
+	public String getMessagem() {
+		return messagem;
+	}
+
+	public String getCaminho() {
+		return caminho;
+	}
 	
 }
